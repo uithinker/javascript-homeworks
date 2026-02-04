@@ -6,17 +6,21 @@
 
 let language = prompt('Type language:');
 
-switch (language) {
-    case 'en':
-        alert('Nice to meet you!')
-        break;
-    case 'de':
-        alert('Gutten tag!');
-        break;
-    case 'ru':
-        alert('Привет, друг!');
-        break;
-    default:
-        alert('Undefined language, sir!')
-        break;
+if (!language) {
+    console.log('Language is not defined');
+} else {
+    switch (language.toLowerCase()) {
+        case 'en':
+            console.log('Nice to meet you!')
+            break;
+        case 'de':
+            console.log('Gutten tag!');
+            break;
+        case 'ru':
+            console.log('Привет, друг!');
+            break;
+        default:
+            console.log('Undefined language, sir!')
+            break;
+    }
 }
