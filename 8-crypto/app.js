@@ -15,14 +15,16 @@ function passwordEncryptor(password) {
     let symbols = password.split('');
     let middle = Math.ceil(symbols.length / 2);
     let firstPartReverse = symbols.slice(0, middle).reverse();
-    let secondPartReverse = symbols.slice(middle).reverse();
+    let secondPartReverse = (symbols.slice(middle).reverse());
+    secondPartReverse.splice(1, 2, 'o', 'r');
 
     return firstPartReverse.join('') + secondPartReverse.join('');
 }
 
-function checkPassword(encrypred, password) {
-    return passwordEncryptor(password) === encrypred;
+function checkPassword(encrypted, password) {
+    return passwordEncryptor(password) === encrypted;
 }
 
 const encrypredPassword = passwordEncryptor('password');
-console.log(checkPassword('ssapdrow', 'password'));
+console.log(encrypredPassword);
+console.log(checkPassword('ssapdorw', 'password'));
