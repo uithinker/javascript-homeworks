@@ -13,6 +13,8 @@ let addressY = 15;
 let positionX = 2;
 let positionY = 5;
 
-let d = Math.sqrt((addressX - positionX)^2 + (addressY - positionY)^2);
+let d = Math.sqrt((addressX - positionX)**2 + (addressY - positionY)**2);
 
 console.log(`Расстояние от текущего расположения [${positionX}, ${positionY}] до назначения [${addressX}, ${addressY}] составляет ${d}`);
+
+//
