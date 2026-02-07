@@ -69,6 +69,51 @@ The function returns:
 
 ---
 
+## 🔐 8-crypto
+
+A simple password encryption and validation task.
+
+The task consists of implementing two functions:
+
+### 🔹 Password encryption
+- The function accepts a plain password
+- Splits the password into characters
+- Rearranges characters according to a custom algorithm
+- Returns an encrypted string
+
+**Concepts used:**
+- strings and arrays
+- custom algorithms
+- functions
+- comparison logic
+
+---
+
+## 🔢 9-sort-loops
+
+A function that sorts an array of numbers using loops only.
+
+**Task description:**
+- Given an array of numbers:
+```js
+`[1, 40, -5, 10, 0]`
+Implement a sorting function without using built-in sorting methods
+
+**Use:**
+- two nested loops
+- element comparison
+- manual swapping of values
+
+The function demonstrates how basic sorting algorithms work internally.
+
+**Concepts used:**
+- arrays
+- nested loops
+- comparison logic
+- swapping elements
+
+---
+
 ## 🛠 Technologies
 
 - HTML
@@ -78,4 +123,4 @@ The function returns:
 
 ## 👤 Author
 
-adam
+adam (uithinker)
