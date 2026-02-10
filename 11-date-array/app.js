@@ -25,7 +25,7 @@ function removeWrongData(array, condition) {
         }
     });
 
-    return resultArray.length ? resultArray : 'Нет дат, подходящих под условие';
+    return resultArray.map(el => el.replace(/-/g, '/'));
 }
 
 const condition = (date, month) => {
