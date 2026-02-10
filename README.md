@@ -112,7 +112,7 @@ The function demonstrates how basic sorting algorithms work internally.
 
 ---
 
-## 📁 10-array-clean
+## 📙 10-array-clean
 
 A function that filters an array of numbers using a **callback condition function**.
 
@@ -133,7 +133,7 @@ how higher-order functions work internally (without using `filter`).
 
 ---
 
-## 📁 11-date-array
+## 📘 11-date-array
 
 A function that cleans an array of strings by removing values  
 that **cannot be converted into valid dates**.
@@ -143,11 +143,11 @@ that **cannot be converted into valid dates**.
 - `DD/MM/YYYY`
 
 ### Concepts used:
--string manipulation
--`split, replace, map`
--array iteration `forEach`
--conditional logic
--defensive programming
+- string manipulation
+- `split, replace, map`
+- array iteration `forEach`
+- conditional logic
+- defensive programming
 
 ---
 
