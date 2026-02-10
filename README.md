@@ -7,6 +7,10 @@
 - `5-languages/` — conditional logic based on user input
 - `6-driver/` — driving permission check using boolean logic
 - `7-converter/` — currency conversion function
+- `8-crypto/` — password encryption and validation logic
+- `9-sort-loops/` — array sorting using nested loops
+- `10-array-clean/` — filter an array of numbers using a callback condition function
+- `11-date-array/` — removing values that cannot be converted into valid dates
 
 ---
 
@@ -93,12 +97,6 @@ The task consists of implementing two functions:
 
 A function that sorts an array of numbers using loops only.
 
-**Task description:**
-- Given an array of numbers:
-```js
-`[1, 40, -5, 10, 0]`
-Implement a sorting function without using built-in sorting methods
-
 **Use:**
 - two nested loops
 - element comparison
@@ -111,6 +109,45 @@ The function demonstrates how basic sorting algorithms work internally.
 - nested loops
 - comparison logic
 - swapping elements
+
+---
+
+## 📁 10-array-clean
+
+A function that filters an array of numbers using a **callback condition function**.
+
+The function:
+- accepts an array of numbers
+- accepts a callback that decides whether an element should be removed
+- returns a new filtered array
+
+This task focuses on understanding **functions as arguments** and  
+how higher-order functions work internally (without using `filter`).
+
+### Concepts used:
+- higher-order functions
+- callbacks
+- loops
+- array mutation vs immutability
+- validation of input data
+
+---
+
+## 📁 11-date-array
+
+A function that cleans an array of strings by removing values  
+that **cannot be converted into valid dates**.
+
+### Supported formats:
+- `DD-MM-YYYY`
+- `DD/MM/YYYY`
+
+### Concepts used:
+-string manipulation
+-`split, replace, map`
+-array iteration `forEach`
+-conditional logic
+-defensive programming
 
 ---
 
