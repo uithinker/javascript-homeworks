@@ -24,9 +24,9 @@ function checkCard(card) {
     isValidCard(card) ? isValid = true : isValid = false;
 
     let startIndex = undefined;
-    (card.length - 1) % 2 !== 0 ? startIndex = 0 : (card.length - 1) % 2 === 0 ? startIndex = 1 : isValid = false;
+    (card.length - 1) % 2 !== 0 ? startIndex = card.length-1 : (card.length - 1) % 2 === 0 ? startIndex = card.length-2 : isValid = false;
 
-    for (let i = startIndex; i < card.length; i += 2) {
+    for (let i = startIndex; i <= card.length; i -= 2) {
         let multiplier = card[i] * 2;
 
         if (multiplier > 9) {
