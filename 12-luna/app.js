@@ -21,10 +21,10 @@ function checkCard(card) {
     
     isValid = true;
     card = card.replaceAll('-', '').split('').map(Number);
-    isValidCard(card) ? isValid : isValid = false;
+    isValidCard(card) ? isValid = true : isValid = false;
 
     let startIndex = undefined;
-    (card.length - 1) % 2 !== 0 ? startIndex = 0 : (card.length - 1) % 2 !== 0 ? startIndex = 0 : isValid = false;
+    (card.length - 1) % 2 !== 0 ? startIndex = 0 : (card.length - 1) % 2 === 0 ? startIndex = 0 : isValid = false;
 
     for (let i = startIndex; i < card.length; i += 2) {
         let multiplier = card[i] * 2;
