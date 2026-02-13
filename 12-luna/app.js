@@ -23,10 +23,9 @@ function checkCard(card) {
     card = card.replaceAll('-', '').split('').map(Number);
     isValidCard(card) ? isValid = true : isValid = false;
 
-    let startIndex = undefined;
-    (card.length - 1) % 2 !== 0 ? startIndex = card.length-1 : (card.length - 1) % 2 === 0 ? startIndex = card.length-2 : isValid = false;
+    let startIndex = card.length-2;
 
-    for (let i = startIndex; i <= card.length; i -= 2) {
+    for (let i = startIndex; i >= card.length; i -= 2) {
         let multiplier = card[i] * 2;
 
         if (multiplier > 9) {
@@ -37,7 +36,7 @@ function checkCard(card) {
         }
     }
 
-    let sumCardNumbers = card.reduce((acc, value) => value + acc, 0)
+    let sumCardNumbers = card.reduce((acc, value) => value + acc, 0);
 
     if (sumCardNumbers % 10 !== 0) {
         isValid = false;
