@@ -25,7 +25,7 @@ function checkCard(card) {
 
     let startIndex = card.length-2;
 
-    for (let i = startIndex; i >= card.length; i -= 2) {
+    for (let i = startIndex; i >= 0; i -= 2) {
         let multiplier = card[i] * 2;
 
         if (multiplier > 9) {
