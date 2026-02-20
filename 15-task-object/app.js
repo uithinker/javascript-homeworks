@@ -22,6 +22,10 @@ const findTask = (tasks, id) => tasks.find(task => task.id === id);
 const toDoList = {
     tasks: [],
     addTask: function (title, priority) {
+        if (typeof title !== 'string' || typeof priority !== 'number') {
+            throw new Error("Переданы неверные аргументы!");
+        }
+
         this.tasks.push({title, id: this.tasks.length + 1, priority});
     },
     deleteTask: function (id) {
@@ -39,12 +43,11 @@ const toDoList = {
             throw new Error("Задание не найдено!");
         }
 
-        if (
-            arguments.length === 3 &&
-            (title.trim() !== "" && title.length !== 0 && typeof title === 'string') &&
-            ((priority >= 1 && priority <= 999) && priority && typeof priority === 'number')
-        ) {
+        if (title.trim() !== "" && title.length !== 0 && typeof title === 'string') {
             task.title = title;
+        }
+
+        if ((priority >= 1 && priority <= 999) && priority && typeof priority === 'number') {
             task.priority = priority;
         }
     },
