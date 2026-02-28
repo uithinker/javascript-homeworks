@@ -1,0 +1,11 @@
+body {
+    background-color: hwb(253 6% 81%);
+}
+
+.answer {
+    width: 200px;
+    padding: 10px;
+    margin: 20px 0;
+    text-align: center;
+    background-color: #fff;
+}
